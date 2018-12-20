@@ -27,8 +27,8 @@ jobs:
     displayName: 'Install dependencies'
 
   - script: |
-      #pip install pytest
-      #pytest tests --doctest-modules --junitxml=junit/test-results.xml
+      pip install pytest
+      pytest flask_api_hello --doctest-modules --junitxml=junit/test-results.xml
     displayName: 'pytest'
 
   - task: PublishTestResults@2
