@@ -1,4 +1,4 @@
-from app import app
+from flaskapi_basic2 import app
 import unittest 
 
 class Flask_api(unittest.TestCase): 
