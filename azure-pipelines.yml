@@ -28,7 +28,7 @@ jobs:
 
   - script: |
       pip install pytest
-      pytest flaskapi_basic2.py --doctest-modules --junitxml=junit/test-results.xml
+      pytest test.py --doctest-modules --junitxml=junit/test-results.xml
     displayName: 'pytest'
 
   - task: PublishTestResults@2
